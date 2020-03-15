@@ -21,6 +21,15 @@ module.exports = function (env, argv) {
 				'.ts',
 			],
 		},
+		externals: [
+			function (context, request, callback) {
+				if (request.startsWith('.')) {
+					callback();
+				} else {
+					callback(null, 'commonjs ' + request);
+				}
+			},
+		],
 		output: {
 			filename: '[name].js',
 			path: path.join(__dirname, 'dist'),
