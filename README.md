@@ -1,0 +1,2 @@
+# sanguosha-ai
+Sanguosha AI
