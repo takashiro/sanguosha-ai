@@ -1,0 +1,7 @@
+/build/
+/src/
+/test/
+.gitignore
+.npmignore
+/webpack.config.js
+/tsconfig.json

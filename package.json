@@ -1,0 +1,35 @@
+{
+  "name": "@karuta/sanguosha-ai",
+  "version": "0.0.1",
+  "description": "AI of Sanguosha Player",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "webpack",
+    "debug": "webpack --mode=development",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/takashiro/sanguosha-ai.git"
+  },
+  "keywords": [
+    "AI",
+    "Sanguosha"
+  ],
+  "author": "Kazuichi Takashiro",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/takashiro/sanguosha-ai/issues"
+  },
+  "homepage": "https://github.com/takashiro/sanguosha-ai#readme",
+  "devDependencies": {
+    "@types/jest": "^25.1.4",
+    "@types/node": "^13.9.0",
+    "jest": "^25.1.0",
+    "ts-jest": "^25.2.1",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.8.3",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11"
+  }
+}
