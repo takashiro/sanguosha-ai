@@ -30,7 +30,7 @@ class Robot {
 
 		for (const MindClass of minds) {
 			const mind = new MindClass(this);
-			this.client.bind(mind.getCommand(), (args: any): void => {
+			this.client.bind(mind.getCommand(), (args: unknown): void => {
 				mind.proceed(args);
 			});
 		}

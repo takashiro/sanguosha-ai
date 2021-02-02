@@ -6,7 +6,8 @@
   "scripts": {
     "build": "webpack",
     "debug": "webpack --mode=development",
-    "test": "jest"
+    "test": "npm run lint && jest",
+    "lint": "eslint --ext=ts,js ."
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,11 @@
   "devDependencies": {
     "@types/jest": "^26.0.20",
     "@types/node": "^14.14.22",
+    "@typescript-eslint/eslint-plugin": "^4.14.2",
+    "@typescript-eslint/parser": "^4.14.2",
+    "eslint": "^7.19.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
     "jest": "^26.6.3",
     "ts-jest": "^26.5.0",
     "ts-loader": "^8.0.14",

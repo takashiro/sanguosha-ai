@@ -8,7 +8,7 @@ export default class ChooseCards extends Neuron<void> {
 		super(robot, cmd.ChooseCards);
 	}
 
-	proceed() {
+	proceed(): void {
 		this.client.send(cmd.ChooseCards, []);
 	}
 }

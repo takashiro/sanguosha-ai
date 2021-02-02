@@ -1,6 +1,7 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 const path = require('path');
 
-module.exports = function (env, argv) {
+module.exports = function config(env, argv) {
 	const mode = (argv && argv.mode) || 'production';
 	return {
 		mode,
@@ -22,11 +23,11 @@ module.exports = function (env, argv) {
 			],
 		},
 		externals: [
-			function ext({context, request}, callback) {
+			function ext({ request }, callback) {
 				if (request.startsWith('.')) {
 					callback();
 				} else {
-					callback(null, 'commonjs ' + request);
+					callback(null, `commonjs ${request}`);
 				}
 			},
 		],
