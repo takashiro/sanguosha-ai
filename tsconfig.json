@@ -1,8 +1,8 @@
 {
 	"compilerOptions": {
-		"module": "es6",
+		"module": "ES2020",
 		"outDir": "dist",
-		"target": "es6",
+		"target": "ES2019",
 		"sourceMap": true,
 		"moduleResolution": "node",
 		"declaration": true,

@@ -22,7 +22,7 @@ module.exports = function (env, argv) {
 			],
 		},
 		externals: [
-			function (context, request, callback) {
+			function ext({context, request}, callback) {
 				if (request.startsWith('.')) {
 					callback();
 				} else {
